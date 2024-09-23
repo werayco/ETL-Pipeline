@@ -1,4 +1,4 @@
 sqlalchemy
 pandas
 mysqlclient
-pip install requests
+requests
