@@ -46,7 +46,7 @@ class ExtractTransformLoad:
 
     def Load(self):
         dataframe_trans = self.Transform()
-        engine = create_engine("mysql+mysqldb://root:Adeyungboi@localhost/base01")
+        engine = create_engine("mysql+mysqldb://your_username:your_password@host/your_db_name") # make sure you have the mysql driver installed on your machinw
         dataframe_trans.to_sql("etl_pracitice", engine, if_exists="replace")
         logging.info("Loading Done")
 
