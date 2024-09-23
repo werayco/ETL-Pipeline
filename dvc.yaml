@@ -1,0 +1,7 @@
+stages:
+  etl_pipeline:
+    cmd: python ETL.py
+    deps:
+    - ETL.py
+    outs:
+    - extracted_data.json
